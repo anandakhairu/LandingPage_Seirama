@@ -3,6 +3,7 @@ $linkPerjanjian = 'perjanjian-kerja-sama.php';
 $linkNota       = 'nota-kesepakatan.php';
 $linkKesepakatan = 'kesepakatan-bersama.php';
 $tahunSekarang  = date('Y');
+
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -19,6 +20,7 @@ $tahunSekarang  = date('Y');
     --text:#2B3532;
     --muted:#6B7671;
     --line:#E2E6E4;
+    --black:#1A1A1A;
   }
   *{box-sizing:border-box;}
   body{
@@ -67,7 +69,7 @@ $tahunSekarang  = date('Y');
     font-size:clamp(24px,3.4vw,34px); font-weight:700; margin:0 0 14px; color:var(--teal-dark);
   }
   .hero p{
-    max-width:620px; margin:0 auto 26px; color:var(--muted); font-size:15px; line-height:1.7;
+    max-width:620px; margin:0 auto 26px; color:var(--black); font-size:15px; line-height:1.7;
   }
   .btn{
     display:inline-block; background:var(--teal); color:#fff; font-weight:600; font-size:14.5px;
@@ -78,13 +80,13 @@ $tahunSekarang  = date('Y');
   /* KATEGORI DATA */
   .section{max-width:1100px; margin:0 auto; padding:20px 20px 60px;}
   .section-title{
-    font-size:18px; font-weight:600; color:var(--teal-dark); margin:0 0 18px; text-align:center;
+    font-size:20px; font-weight:600; color:var(--teal-dark); margin:0 0 18px; text-align:center;
   }
   .cards{
     display:grid; grid-template-columns:repeat(3,1fr); gap:18px;
   }
   .card{
-    background:#fff; border:1px solid var(--line); border-radius:10px; padding:26px 22px;
+    background:#fff; border:1px solid var(--teal); border-radius:10px; padding:26px 22px;
     text-align:left;
   }
   .card-stat{
@@ -94,7 +96,7 @@ $tahunSekarang  = date('Y');
     font-size:38px; font-weight:800; color:var(--teal-dark); line-height:1;
   }
   .card-stat-label{
-    font-size:13px; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:0.03em;
+    font-size:13px; font-weight:600; color:var(--teal-dark); text-transform:uppercase; letter-spacing:0.03em;
   }
   .card h3{font-size:15.5px; font-weight:600; color:var(--text); margin:0 0 8px;}
   .card p{font-size:13.5px; color:var(--muted); line-height:1.6; margin:0 0 16px;}
@@ -104,11 +106,11 @@ $tahunSekarang  = date('Y');
 
   /* TENTANG */
   .about-box{
-    background:#fff; border:1px solid var(--line); border-radius:10px;
+    background:#fff; border:2px solid var(--teal); border-radius:10px;
     padding:32px clamp(22px,5vw,44px); max-width:900px; margin:0 auto;
   }
   .about-box p{
-    color:var(--muted); font-size:14.5px; line-height:1.8; margin:0 0 16px;
+    color:var(--black); font-size:14.5px; line-height:1.8; margin:0 0 16px; text-align:justify;
   }
   .about-box p:last-of-type{margin-bottom:0;}
 
